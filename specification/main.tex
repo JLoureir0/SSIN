@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage[
+backend=biber,
+sorting=none
+]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\title{\Huge\textbf{Cryptographic Libraries}\linebreak\linebreak\linebreak
+\Large\textbf{Specification Report}\linebreak\linebreak
+\linebreak\linebreak
+\includegraphics[scale=0.1]{feup-logo.png}\linebreak\linebreak
+\linebreak\linebreak
+\Large{Integrated Master in Informatics and Computing Engineering} \linebreak\linebreak
+\Large{Security in Computer Systems}\linebreak
+}
+
+\author{\textbf{Group 4:}\\
+João Fidalgo - 201303098 \\
+João Loureiro - 200806067 \\
+Ka Chon Ho - 201711244 \\
+Paulo Costa - 201206045 \\
+\linebreak\linebreak
+ \\ Faculdade de Engenharia da Universidade do Porto \\ Rua Roberto Frias, s\/n, 4200-465 Porto, Portugal \linebreak\linebreak\linebreak
+\linebreak\linebreak\vspace{1cm}}
+
+\maketitle
+
+\newpage
+
+\section{Introduction}
+
+Cryptology has quickly grown from a field only used by government and military agencies to being one that impacts the day to day lives of consumers across the globe. Cryptographic libraries are used by individuals in just about any country in the world when conducting secure online transactions, communicating via secure email or video, and in numerous B2B (business-to-business) transactions. As a result, there are a number of cryptographic libraries that have been developed for use in most of the major programming language libraries.\cite{tech-faq}
+ 
+\section{Project Specification}
+\subsection{Integration in Software}
+The Internet is a key to everything, especially e-whatever is a commonly used term in recently years, like "e-banking", "e-office". More and more data is being transferred through the Internet, which is a public network. Cryptography is used on these applications in order to prevent unexpected accesses, transactions, and operations. Our group would like to find out which is the most effective way of integrating the use of cryptographic libraries as well as the benefits and challenges of dealing with each if them.   
+
+\subsection{Libraries Comparison}
+There will be made an extensive research about the existing cryptographic libraties, in order to find which one or which combination of them can provide the most value of use. In particular, there will be made a comparison between the cryptlib\cite{cryptlib}, openssl\cite{openssl}, NaCl\cite{nacl} and gpl\cite{gnupg} libraries, among others that will be considered between the elements of the group. The main operations supported include key operations - key generation algorithms, key exchange agreements and public key cryptography standards, hash functions, MAC algorithms, cyphers and hardware-assisted support. 
+
+\subsection{Goals and Quality}
+There will be made an analysis of the given cryptographic libraries in order to do a classification of quality of the features provided, relative to each other. It will also be our group's goal to provide a deeper explanation about the current state of art of the libraries, as well as the reason of their creation, objective and their procedures, from a conceptual point of view. 
+
+\subsection{Heartbleed}
+The Heartbleed Bug is a serious vulnerability in the popular OpenSSL cryptographic software library. This weakness allows stealing the information protected, under normal conditions, by the SSL/TLS encryption used to secure the Internet. SSL/TLS provides communication security and privacy over the Internet for applications such as web, email, instant messaging (IM) and some virtual private networks (VPNs).\cite{heartbleed}
+
+As a bonus to our project we will also present a demonstration of the Heartbleed Bug.\cite{heartbleed-poc}
+
+\printbibliography
+
+\end{document}
